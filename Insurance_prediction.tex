@@ -1,0 +1,143 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\mode<presentation>
+{
+  \usetheme{Warsaw}      % or try Darmstadt, Madrid, Warsaw, ...
+  %\usecolortheme{albatross} % or try albatross, beaver, crane, ...
+  \usefonttheme{serif}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+
+\title[]{\textbf{MEDICAL INSURANCE COST PREDICTION}}
+\institute{\Large\textbf{ SHRI VISHNU ENGINEERING COLLEGE FOR WOMEN}}
+\author[]{L.Harshitha 21B01A0590: CSE\\
+        N.Sai Ramya Sri 21B01A05B4: CSE \\
+        O.Pranathi Sudha 21B01A05C7: CSE\\
+        P.Divya Tejaswini 21B01A05C9: CSE\\}
+\date{17th February, 2024}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+% These three lines create an automatically generated table of contents.
+\begin{frame}{Table Of Content}
+ \tableofcontents
+\begin{enumerate}
+    \item Introduction
+     \item Problem Statement
+      \item Dataset Description
+       \item Model Building
+        \item Evaluation Metrics
+         \item Deployment
+          \item Accuracy Results
+             \item Result    
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Introduction}
+
+\begin{itemize}
+  \item The healthcare industry is undergoing various Technological adaptations. Amidst these changes, the ability to predict medical insurance costs has emerged as a critical task for insurance providers and healthcare organizations. \\
+  \item The goal is to understand the factors that contribute to insurance and to build a machine learning model capable of predicting the Medical Insurance Cost.\\
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{\textbf{Problem Statement}}
+\begin{itemize}
+\item The project focuses on predicting medical insurance using a dataset.\\
+\item The problem is framed as a regression task: predicting the insurance charges based on various features such as age, sex, BMI, number of children, smoking status, and region.\\
+\end{itemize}
+
+
+
+\end{frame}
+
+\begin{frame}{\textbf {Dataset Description}}
+
+\begin{itemize}
+
+\item The Dataset includes information such as patient demographics, region etc.\\
+\item  Key features include age, gender, BMI, region, smoker or not, number of children.\\
+\item  The target variable is "Insurance Money," and the Machine Learning model can be trained on historical data to predict this outcome for new individuals.\\
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{\textbf{Model Building}}
+
+  Three classification models have been implemented in the project:
+\begin{itemize}
+    \item Linear Regression\\
+   \item Decision Tree Regression\\
+   \item Random Forest Regression\\
+\end{itemize}
+
+\end{frame}
+\begin{frame}{Evaluation Metrics}
+  The performance of the models is assessed using common classification metrics:
+\begin{itemize}
+    \item Accuracy\\
+   \item Root Mean Square Error\\
+   \item Mean Absolute Error\\
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Deployment}
+\begin{itemize}
+    \item Framework : gradio \\
+    \item Programming Language: Python \\
+     \item Version Control : Git hub \\
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Accuracy Results}
+    \begin{table}
+\centering
+\caption{\large \textbf{Models with Accuracy}}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Model} & \textbf{Accuracy}  \\
+\hline
+Linear Regression & 0.727 \\
+\hline
+RandmForest Regression & 0.936 \\
+\hline
+Decision Tree Regressor & 0.916 \\
+
+\hline
+\end{tabular}
+\end{table}
+\begin{itemize}
+    \item Selected Model : Decision Tree Regressor\\
+\end{itemize} 
+\end{frame}
+
+
+\begin{frame}{Random Forest Regression Accuracy}
+    \includegraphics[width=1\textwidth]{rf.png }
+\end{frame}
+
+
+\begin{frame}{Decision Tree Regressor Accuracy}
+    \includegraphics[width=1\textwidth]{dt.png}
+\end{frame}
+
+\begin{frame}{Result}
+    \includegraphics[width=1\textwidth]{output.png}
+\end{frame}
+
+\begin{frame}\begin{center}
+\Huge {Thank You}
+\end{center}
+   
+\end{frame}
+ \end{document}
+\end{document}
